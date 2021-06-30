@@ -56,15 +56,18 @@
                 </feature>
             </config-file>
 
+            <podspec>
+              <pods use-frameworks="true">
+                <pod name="XCDYouTubeKit" git="https://github.com/dpwilhelmsen/XCDYouTubeKit" branch="hotfix/fix-get-video-info-error"/>
+              </pods>
+            </podspec>
             
-            <framework src="XCDYouTubeKit" type="podspec" spec="~> 2.15.2" />
             <header-file src="platforms/ios/YoutubeVideoPlayerProject/Plugins/com.bunkerpalace.cordova.YoutubeVideoPlayer/YoutubeVideoPlayer.h"/>
             <source-file src="platforms/ios/YoutubeVideoPlayerProject/Plugins/com.bunkerpalace.cordova.YoutubeVideoPlayer/YoutubeVideoPlayer.m"/>
 
             <framework src="MediaPlayer.framework"/>
             <framework src="AVFoundation.framework"/>
             <framework src="JavaScriptCore.framework"/>
-
         </platform>
 
     </plugin>
